@@ -18,7 +18,7 @@ GET /login2
 --Then click OK. The Macro Editor dialog opens.
 --Click Test macro and check that the final response contains the page asking you to provide the 4-digit security code. 
 --This confirms that the macro is working correctly.
-Keep clicking OK to close the various dialogs until you get back to the main Burp window. The macro will now automatically log you back in as Carlos before each request is sent by Burp Intruder.
+--Keep clicking OK to close the various dialogs until you get back to the main Burp window. The macro will now automatically log you back in as Carlos before each request is sent by Burp Intruder.
 Send the POST /login2 request to Burp Intruder.
 In Burp Intruder, add a payload position to the mfa-code parameter.
 On the Payloads tab, select the Numbers payload type. Enter the range 0 - 9999 and set the step to 1. Set the min/max integer digits to 4 and max fraction digits to 0. This will create a payload for every possible 4-digit integer.
