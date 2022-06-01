@@ -6,17 +6,18 @@
 
 --With Burp running, log in as carlos and investigate the 2FA verification process. Notice that if you enter the wrong code twice, you will be logged out again. 
 --You need to use Burp's session handling features to log back in automatically before sending each request.
-In Burp, go to Project options > Sessions. In the Session Handling Rules panel, click Add. The Session handling rule editor dialog opens.
-In the dialog, go to the Scope tab. Under URL Scope, select the option Include all URLs.
-Go back to the Details tab and under Rule Actions, click Add > Run a macro.
+--In Burp, go to Project options > Sessions. In the Session Handling Rules panel, click Add. The Session handling rule editor dialog opens.
+--In the dialog, go to the Scope tab. Under URL Scope, select the option Include all URLs.
+--Go back to the Details tab and under Rule Actions, click Add > Run a macro.
 
-Under Select macro click Add to open the Macro Recorder. Select the following 3 requests:
+--Under Select macro click Add to open the Macro Recorder. Select the following 3 requests:
 GET /login
 POST /login
 GET /login2
 
-Then click OK. The Macro Editor dialog opens.
-Click Test macro and check that the final response contains the page asking you to provide the 4-digit security code. This confirms that the macro is working correctly.
+--Then click OK. The Macro Editor dialog opens.
+--Click Test macro and check that the final response contains the page asking you to provide the 4-digit security code. 
+--This confirms that the macro is working correctly.
 Keep clicking OK to close the various dialogs until you get back to the main Burp window. The macro will now automatically log you back in as Carlos before each request is sent by Burp Intruder.
 Send the POST /login2 request to Burp Intruder.
 In Burp Intruder, add a payload position to the mfa-code parameter.
