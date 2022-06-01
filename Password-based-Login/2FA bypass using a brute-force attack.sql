@@ -4,7 +4,8 @@
 
 --You will need to use Burp macros in conjunction with Burp Intruder
 
---With Burp running, log in as carlos and investigate the 2FA verification process. Notice that if you enter the wrong code twice, you will be logged out again. You need to use Burp's session handling features to log back in automatically before sending each request.
+--With Burp running, log in as carlos and investigate the 2FA verification process. Notice that if you enter the wrong code twice, you will be logged out again. 
+--You need to use Burp's session handling features to log back in automatically before sending each request.
 In Burp, go to Project options > Sessions. In the Session Handling Rules panel, click Add. The Session handling rule editor dialog opens.
 In the dialog, go to the Scope tab. Under URL Scope, select the option Include all URLs.
 Go back to the Details tab and under Rule Actions, click Add > Run a macro.
