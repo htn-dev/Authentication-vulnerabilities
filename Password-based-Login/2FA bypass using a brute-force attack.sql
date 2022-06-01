@@ -1,0 +1,3 @@
+--Some websites attempt to adequate brute-force protection by automatically logging a user out if they enter a certain number of incorrect verification codes. 
+--This is ineffective in practice because an advanced attacker can even automate this multi-step process by creating macros for Burp Intruder. 
+--The Turbo Intruder extension can also be used for this purpose. 
