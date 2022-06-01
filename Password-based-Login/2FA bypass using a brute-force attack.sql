@@ -22,6 +22,7 @@ GET /login2
 --The macro will now automatically log you back in as Carlos before each request is sent by Burp Intruder.
 --Send the POST /login2 request to Burp Intruder.
 --In Burp Intruder, add a payload position to the mfa-code parameter.
---On the Payloads tab, select the Numbers payload type. Enter the range 0 - 9999 and set the step to 1. Set the min/max integer digits to 4 and max fraction digits to 0. This will create a payload for every possible 4-digit integer.
+--On the Payloads tab, select the Numbers payload type. Enter the range 0 - 9999 and set the step to 1. Set the min/max integer digits to 4 
+--and max fraction digits to 0. This will create a payload for every possible 4-digit integer.
 --Go to the Resource pool tab and add the attack to a resource pool with the Maximum concurrent requests set to 1.
 --Start the attack. Eventually, one of the requests will return a 302 status code. Right-click on this request and select Show response in browser. Copy the URL and load it in the browser. 
