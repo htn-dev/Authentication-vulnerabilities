@@ -8,7 +8,7 @@
 --In Burp, go to Project options > Sessions. In the Session Handling Rules panel, click Add. The Session handling rule editor dialog opens.
 --In the dialog, go to the Scope tab. Under URL Scope, select the option Include all URLs.
 --Go back to the Details tab and under Rule Actions, click Add > Run a macro.
-    
+   
 --Under Select macro click Add to open the Macro Recorder. Select the following 3 requests:
 GET /login
 POST /login
