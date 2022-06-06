@@ -1,5 +1,5 @@
 --With Burp running, investigate the login page and submit an invalid username and password. Send the POST /login request to Burp Intruder.
-  
+ 
 --Select the attack type Cluster bomb. Add a payload position to the username parameter. Add a blank payload position to the end of the request body 
 --by clicking Add § twice. The result should look something like this:
 username=§invalid-username§&password=example§§
