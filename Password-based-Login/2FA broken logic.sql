@@ -13,7 +13,7 @@
 --In Burp Intruder, set the verify parameter to carlos and add a payload position to the mfa-code parameter. Brute-force the verification code.
 --Load the 302 response in the browser.
 --Click My account to solve the lab. 
- 
+  
 
 
 
