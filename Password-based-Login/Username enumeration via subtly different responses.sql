@@ -6,7 +6,7 @@
 --that one of them is subtly different.
 --Look closer at this response and notice that it contains a typo in the error message - instead of a full stop/period, there is a trailing space. Make a note of 
 --this username.
-   
+    
 --Close the attack and go back to the Positions tab. Insert the username you just identified and add a payload position to the password parameter:
 username=identified-user&password=§invalid-password§
 --On the Payloads tab, clear the list of usernames and replace it with the list of passwords. Start the attack.
