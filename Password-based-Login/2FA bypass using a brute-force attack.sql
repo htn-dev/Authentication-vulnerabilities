@@ -1,7 +1,7 @@
 --Some websites attempt to adequate brute-force protection by automatically logging a user out if they enter a certain number of incorrect verification codes. 
 --This is ineffective in practice because an advanced attacker can even automate this multi-step process by creating macros for Burp Intruder. 
 --The Turbo Intruder extension can also be used for this purpose. 
-    
+     
 --Burp macros is needed in conjunction with Burp Intruder
 --With Burp running, log in as "carlos" and investigate the 2FA verification process. Notice that if you enter the wrong code twice, you will be logged out again. 
 --You need to use Burp's session handling features to log back in automatically before sending each request.
