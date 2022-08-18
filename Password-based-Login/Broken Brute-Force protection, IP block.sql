@@ -13,4 +13,3 @@
 --Log in to Carlos's account using the password that you identified and access his account page to solve the lab.
      
 
-
